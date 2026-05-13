@@ -1,2 +1,2 @@
 # excel-airline-passenger-satisfaction-dashboard
-An Excel analysis of service ratings, passenger segments and satisfaction outcomes.
+An Excel-based passenger satisfaction dashboard exploring service ratings, passenger segments and satisfaction drivers.
