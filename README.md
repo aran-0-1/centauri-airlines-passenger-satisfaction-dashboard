@@ -35,13 +35,13 @@ Key Excel techniques included:
 - `COUNTIF` and `COUNTIFS`
 - `AVERAGEIF` and `AVERAGEIFS`
 - `COUNTIF` and `COUNTIFS`
-- 'SUMIF' and 'SUMIFS'
+- `SUMIF` and `SUMIFS`
 - `IFS`
-- Ranking formulas - 'RANK.EQ'
-- Lookup formulas - 'XLOOKUP'
-- Dynamic Array Functions - 'Transpose' , 'Unique', 'Sort'
-- Data validation dropdowns - ability to choose flight class.
-- Conditional formatting - colour scales.
+- Ranking formulas - `RANK.EQ`
+- Lookup formulas - `XLOOKUP`
+- Dynamic Array Functions - `Transpose` , `Unique`, `Sort`
+- Data validation dropdowns - ability to choose different flight class.
+- Conditional formatting - colour scales for service ratings. 
 - Helper columns 
 - Age bands
 - Flight haul bands
@@ -126,10 +126,10 @@ This helps assess whether the airline’s core passenger base is satisfied.
 
 - Inflight service and baggage handling were consistent strengths across all flight classes, while inflight Wi-Fi and ease of online booking were recurring weaknesses, highlighting digital experience as a key improvement area.
 - Overall passenger satisfaction was below 50%, showing clear room for improvement.
-- Higher Overall Service Score was strongly associated with higher satisfaction.
-- Centauri Airlines’ average Overall Service Score was approximately 3.28, placing it in a moderate score band.
-- Passenger volume was concentrated mainly in the 25–54 age range.
-- Satisfaction appeared higher on longer-haul flights, but this may be partly explained by a higher proportion of Business Class passengers.
+- Higher Overall Service Score was strongly associated with higher satisfaction rate.
+- Centauri Airlines’ average Overall Service Score was approximately 3.28, placing it in the 3.00-3.49 OSS band.
+- Passenger volume was concentrated mainly in the 25–54 age range. There's no significant variation as to how different age groups rate us.
+- Higher satisfaction on longer-haul flights appears largely driven by a greater concentration of Business Class passengers, who reported higher service ratings and therefore were more likely to be satisfied.
 - Loyal passengers had a higher satisfaction rate than non-loyal passengers, but satisfaction among loyal passengers was still below 50%.
 
 ---
