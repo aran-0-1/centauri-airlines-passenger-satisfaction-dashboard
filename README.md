@@ -34,18 +34,14 @@ Key Excel techniques included:
 
 - `COUNTIF` and `COUNTIFS`
 - `AVERAGEIF` and `AVERAGEIFS`
-- `COUNTIF` and `COUNTIFS`
 - `SUMIF` and `SUMIFS`
-- `IFS`
+- `IF` and `IFS`
 - Ranking formulas - `RANK.EQ`
 - Lookup formulas - `XLOOKUP`
 - Dynamic Array Functions - `Transpose` , `Unique`, `Sort`
 - Data validation dropdowns - ability to choose different flight class.
 - Conditional formatting - colour scales for service ratings. 
-- Helper columns 
-- Age bands
-- Flight haul bands
-- Overall Service Score bands
+- Helper columns - Age bands, Flight haul bands, Overall Service Score bands etc.
 - Visualisation techniques 
 - Donut charts
 - Bar charts
@@ -74,7 +70,11 @@ Important assumptions:
 - Flight distance was treated as miles.
 - The analysis focuses on association rather than causation. For example, higher satisfaction on longer-haul flights may be influenced by class mix rather than flight haul alone.
 
----
+Other information:
+
+- Initial data was already very clean and well structured. There were no null values and each row represented a unique passenger.
+- Some data prepartion was involved in order to make column values more concise using excel's find and replace feature. 
+- No Power Query or Data modelling aspects were used. These features will be used later in Power BI projects. 
 
 ## Dashboard Sections
 
