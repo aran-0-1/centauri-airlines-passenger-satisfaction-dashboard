@@ -3,7 +3,9 @@
 ## Project Overview
 
 This project analyses airline passenger satisfaction data to understand which service areas, passenger segments, and journey factors are associated with overall satisfaction.
+
 The dashboard was built in Microsoft Excel using formulas and focuses on service ratings, passenger experience areas, flight class, age groups, flight haul, customer loyalty, and overall satisfaction outcomes.
+
 The aim of the project was to identify where Centauri Airlines should focus improvement efforts to increase passenger satisfaction.
 
 ![Dashboard Preview](dashboard-preview.png)
@@ -73,48 +75,49 @@ Important assumptions:
 Other information:
 
 - Initial data was already very clean and well structured. There were no null values and each row represented a unique passenger.
-- Some data prepartion was involved in order to make column values more concise using excel's find and replace feature. 
-- No Power Query or Data modelling aspects were used. These features will be used later in Power BI projects. 
+- Some data prepartion was involved in order to make column values more concis/readable using excel's find and replace feature. 
+- No power query or data modelling aspects were used. These features will be used later in Power BI projects.
+- The inital dataset contained approximatley 104k rows and 25 columns. Worked dataset has the same number of rows but 32 columns now. 
 
 ## Dashboard Sections
 
-### 1. Service Ratings by Passenger Experience Area
+ 1. Service Ratings by Passenger Experience Area
 
 This section compares the average rating across different passenger experience areas.
 
 The lowest-rated areas were highlighted to identify where Centauri Airlines may need to focus improvement efforts.
 
-### 2. Dynamic Top and Bottom 3 by Flight Class
+ 2. Dynamic Top and Bottom 3 by Flight Class
 
 A data validation dropdown allows the user to select a flight class: Business, Economy, or Economy Plus.
 
 The dashboard then dynamically shows the top 3 and bottom 3 passenger experience areas for the selected class.
 
-### 3. Age Group Profile
+3. Age Group Profile
 
 This section shows passenger count and Overall Service Score by age group.
 
 It helps identify which age groups make up the largest share of the passenger base and how the overall service score varies by different age groups.
 
-### 4. Overall Passenger Satisfaction
+4. Overall Passenger Satisfaction
 
 A donut chart shows the overall split between satisfied and neutral/dissatisfied passengers.
 
 This gives a high-level view of customer satisfaction.
 
-### 5. Overall Service Score vs Satisfaction Rate
+5. Overall Service Score vs Satisfaction Rate
 
 This section analyses how satisfaction rate changes across Overall Service Score bands.
 
 It shows whether passengers with higher service scores are more likely to be satisfied.
 
-### 6. Flight Haul vs Satisfaction
+6. Flight Haul vs Satisfaction
 
 A 100% stacked bar chart shows satisfaction split by flight haul.
 
 Further analysis suggested that higher satisfaction on longer-haul flights may be influenced by a higher share of Business Class passengers.
 
-### 7. Customer Loyalty vs Satisfaction
+7. Customer Loyalty vs Satisfaction
 
 A 100% stacked bar chart compares satisfaction between loyal and non-loyal passengers.
 
