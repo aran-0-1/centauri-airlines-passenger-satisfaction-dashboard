@@ -130,7 +130,13 @@ This helps assess whether the airline’s core passenger base is satisfied.
 
 ---
 
-## Key Insights and Recommendations 
+## Dashboard Insights and Analysis
+
+[Read the Dashboard Insight and Analysis](dashboard-insight-analysis.md)
+
+---
+
+## Recommendations 
 
 - Prioritise Controllable Service Weaknesses
 
@@ -154,12 +160,6 @@ The OSS band analysis clearly shows that crossing from 3.00–3.49 into 3.50–3
 
 ---
 
-## Dashboard Insights and Analysis
-
-[Read the One Page Dashboard Insight and Analysis](dashboard-insight-analysis.md)
-
----
-
 ## Files Included
 
 - `Centauri_Airlines_Passenger_Satisfaction_Dashboard.xlsx`  
@@ -167,6 +167,9 @@ The OSS band analysis clearly shows that crossing from 3.00–3.49 into 3.50–3
 
 - `dashboard-preview.png`  
   Dashboard preview image.
+
+- `dashboard-insight-analysis.md`
+  One page dashbaord insight and analysis. 
 
 ---
 
