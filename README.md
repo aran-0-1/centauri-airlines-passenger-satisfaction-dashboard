@@ -83,6 +83,7 @@ Other information:
 - The inital dataset contained approximatley 104k rows and 25 columns. Worked dataset has the same number of rows but 32 columns now.
 - Passenger IDs seemed to be random and big in numbers so a change was made using fill series from 1 to until 103904. This is ok in my context however in an organisational setting it is not recommended as this id may be a primary key that is referenced by a foriegn key in another table.
 - The dataset used for this project was sourced from Kaggle: Airline Passenger Satisfaction dataset.
+- Overall Service Score calculation example: There are 14 categories overall. Lets asusme a passenger rates us: 2,4,4,2,5,1,4,0,3,3,2,3,5,3. Then sum of this rating = 41. No. of response = 13. Overall Service Score = 41/13 = 3.15.
 
 ## Dashboard Sections
 
@@ -130,23 +131,18 @@ This helps assess whether the airline’s core passenger base is satisfied.
 
 ---
 
-## Key Insights
+## Key Insights and Recommendations 
 
-- Inflight service and baggage handling were consistent strengths across all flight classes, while inflight Wi-Fi and ease of online booking were recurring weaknesses, highlighting digital experience as a key improvement area.
-- Overall passenger satisfaction was below 50%, showing clear room for improvement.
-- Higher Overall Service Score was strongly associated with higher satisfaction rate.
-- Centauri Airlines’ average Overall Service Score was approximately 3.28, placing it in the 3.00-3.49 OSS band.
-- Passenger volume was concentrated mainly in the 25–54 age range. There's no significant variation as to how different age groups rate us.
-- Higher satisfaction on longer-haul flights appears largely driven by a greater concentration of Business Class passengers, who reported higher service ratings and therefore were more likely to be satisfied.
-- Loyal passengers had a higher satisfaction rate than non-loyal passengers, but satisfaction among loyal passengers was still below 50%.
-
----
-
-## Recommendations
-
-Based on the analysis, Centauri Airlines should prioritise improving weaker controllable service areas such as inflight Wi-Fi and ease of online booking.
-Improving these areas could help increase the Overall Service Score and move more passengers into higher satisfaction bands.
-The airline should also focus on its loyal passenger base, as loyal passengers represent a large share of the dataset but still show significant room for satisfaction improvement.
+- Prioritise Controllable Service Weaknesses
+Immediate focus should be placed on improving Inflight Wi-Fi, the online booking experience, and catering services. These are areas where the airline has direct control and current performance is dragging the overall service score below the 3.50 threshold where satisfaction rates improve meaningfully.
+- Address the Economy Class Experience Urgently
+With only 19% satisfaction among economy passengers — who represent 45% of the passenger base — this is the single biggest lever for improving overall satisfaction. Even modest service improvements in economy could have an outsized impact on the headline 43% satisfaction rate.
+- Target the Core Passenger Demographic
+Since passengers aged 25–54 represent 63% of the base, product and service improvements should be shaped around the preferences and behaviours of this group — particularly around digital touchpoints such as online booking and Wi-Fi which are likely higher priorities for this demographic.
+- Invest in Loyalty Conversion
+Non-loyal passengers report only 24% satisfaction compared to 48% among loyal passengers. Improving the experience for first-time and infrequent travellers — particularly in economy — could strengthen retention and grow the loyal base over time.
+- Raise the Overall Service Score Above 3.50
+The OSS band analysis clearly shows that crossing from 3.00–3.49 into 3.50–3.99 is associated with a significant jump in satisfaction. This should be treated as a concrete, measurable target rather than a general aspiration.
 
 ---
 
