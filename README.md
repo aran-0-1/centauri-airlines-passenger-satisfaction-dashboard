@@ -162,14 +162,17 @@ The OSS band analysis clearly shows that crossing from 3.00–3.49 into 3.50–3
 
 ## Files Included
 
-- `Centauri_Airlines_Passenger_Satisfaction_Dashboard.xlsx`  
-  Excel workbook containing the dashboard, analysis, working data, and supporting calculations.
+### `Centauri_Airlines_Passenger_Satisfaction_Dashboard.xlsx`
 
-- `dashboard-preview.png`
-  Dashboard preview image.
+Excel workbook containing the dashboard, analysis, working data, and supporting calculations.
 
-- `dashboard-insight-analysis.md`
-  One page dashboard insight and analysis. 
+### `dashboard-preview.png`
+
+Dashboard preview image.
+
+### `dashboard-insight-analysis.md`
+
+One-page dashboard insight and analysis.
 
 ---
 
