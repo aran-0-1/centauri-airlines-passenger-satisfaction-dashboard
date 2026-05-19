@@ -71,17 +71,18 @@ Several helper columns were created to support the analysis:
 
 Important assumptions:
 
-- Rating values of `0` were treated as **Not Rated / Not Applicable** and excluded from service rating calculations. This is atleast what the inital author of the data assumes.
+- Rating values of `0` were treated as **Not Rated / Not Applicable** and excluded from service rating calculations. This is what the inital author of the data assumes. Nonetheless, these responses were low/negligible in relation to the overall data.
 - Flight distance was treated as miles.
 - The analysis focuses on association rather than causation. For example, higher satisfaction on longer-haul flights may be influenced by class mix rather than flight haul alone.
 
 Other information:
 
-- Initial data was very clean and well structured. There were no null/empty values and each row represented a unique passenger meamning no duplication.
+- Initial data was very clean and well structured. There were no null/empty values and each row represented a unique passenger meaning no duplication.
 - Some data prepartion was involved in order to make column values more concise/readable using excel's find and replace feature. 
 - No power query or data modelling aspects were used. These features will be used later in Power BI projects.
 - The inital dataset contained approximatley 104k rows and 25 columns. Worked dataset has the same number of rows but 32 columns now.
-- Passenger IDs were changed from 1 to 
+- Passenger IDs seemed to be random and big in numbers so a change was made using fill series from 1 to until 103904. This is ok in my context however in an organisational setting it is not recommended as this id may be a primary key that is referenced by a foriegn key in another table.
+- The dataset used for this project was sourced from Kaggle: Airline Passenger Satisfaction dataset.
 
 ## Dashboard Sections
 
@@ -160,4 +161,4 @@ The airline should also focus on its loyal passenger base, as loyal passengers r
 ---
 
 ## Project Status
-Completed first version of the Excel dashboard. Further refinements may include additional documentation, deeper insight summaries, and portfolio write-up improvements.
+Completed Project 1 of 5.
