@@ -132,7 +132,7 @@ This helps assess whether the airline’s core passenger base is satisfied.
 
 ## Dashboard Insights and Analysis
 
-[Read the Dashboard Insight and Analysis](dashboard-insight-analysis.md)
+[Read the Dashboard Insight and Analysis](dashboard-insights-analysis.md)
 
 ---
 
