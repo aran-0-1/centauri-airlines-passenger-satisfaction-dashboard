@@ -150,9 +150,9 @@ With only 19% satisfaction among economy passengers — who represent 45% of the
 
 Since passengers aged 25–54 represent 63% of the base, product and service improvements should be shaped around the preferences and behaviours of this group — particularly around digital touchpoints such as online booking and Wi-Fi which are likely higher priorities for this demographic.
 
-- Invest in Loyalty Conversion
+-  Improve Satisfaction Among the Loyal Passenger Base
 
-Non-loyal passengers report only 24% satisfaction compared to 48% among loyal passengers. Improving the experience for first-time and infrequent travellers — particularly in economy — could strengthen retention and grow the loyal base over time.
+Whilst 82% of passengers are loyal to Centauri Airlines, satisfaction within this group sits below 50% at 48%. This suggests that whilst the airline is succeeding in retaining passengers, it is not fully converting that loyalty into a positive experience. Efforts should therefore focus on improving the quality of experience for existing loyal customers to ensure retention is underpinned by genuine satisfaction rather than habit or lack of alternatives
 
 - Raise the Overall Service Score Above 3.50
 
