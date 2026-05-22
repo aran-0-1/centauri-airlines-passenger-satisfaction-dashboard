@@ -138,25 +138,25 @@ This helps assess whether the airline’s core passenger base is satisfied.
 
 ## Recommendations 
 
+- Raise the Overall Service Score Above 3.50
+
+The OSS band analysis demonstrates that crossing from the 3.00–3.49 band into 3.50–3.99 is associated with a significant jump in satisfaction from 38% to 61%. This should be treated as a concrete, measurable target and the primary focus for all improvement efforts across the airline.
+
 - Prioritise Controllable Service Weaknesses
 
-Immediate focus should be placed on improving Inflight Wi-Fi, the online booking experience, and catering services. These are areas where the airline has direct control and current performance is dragging the overall service score below the 3.50 threshold where satisfaction rates improve meaningfully.
+Immediate attention should be directed towards Inflight Wi-Fi, the online booking experience, and catering services. These are areas where the airline has direct control and current performance is actively dragging the overall service score below the 3.50 threshold. Gate Location and Schedule Convenience, whilst below average, are likely influenced by airport operations and should be treated as secondary priorities.
 
 - Address the Economy Class Experience Urgently
 
-With only 19% satisfaction among economy passengers — who represent 45% of the passenger base — this is the single biggest lever for improving overall satisfaction. Even modest service improvements in economy could have an outsized impact on the headline 43% satisfaction rate.
+With only 19% satisfaction among Economy passengers — who represent 45% of the passenger base — this is the single biggest lever for improving overall satisfaction. Even modest and targeted service improvements in Economy could have an outsized impact on the airline's headline satisfaction rate.
+
+- Improve Satisfaction Among the Loyal Passenger Base
+  
+Whilst 82% of passengers are loyal to Centauri Airlines, satisfaction within this group sits below 50% at 48%. This suggests the airline is succeeding in retaining passengers but not fully converting that loyalty into a positive experience. Improvement efforts should therefore focus on enhancing the quality of experience for existing loyal customers rather than solely prioritising retention.
 
 - Target the Core Passenger Demographic
 
-Since passengers aged 25–54 represent 63% of the base, product and service improvements should be shaped around the preferences and behaviours of this group — particularly around digital touchpoints such as online booking and Wi-Fi which are likely higher priorities for this demographic.
-
--  Improve Satisfaction Among the Loyal Passenger Base
-
-Whilst 82% of passengers are loyal to Centauri Airlines, satisfaction within this group sits below 50% at 48%. This suggests that whilst the airline is succeeding in retaining passengers, it is not fully converting that loyalty into a positive experience. Efforts should therefore focus on improving the quality of experience for existing loyal customers to ensure retention is underpinned by genuine satisfaction rather than habit or lack of alternatives
-
-- Raise the Overall Service Score Above 3.50
-
-The OSS band analysis clearly shows that crossing from 3.00–3.49 into 3.50–3.99 is associated with a significant jump in satisfaction. This should be treated as a concrete, measurable target rather than a general aspiration.
+Passengers aged 25–54 represent 63% of the passenger base. Future improvement efforts — particularly around digital touchpoints such as Wi-Fi and online booking — should be shaped around the preferences and behaviours of this demographic to maximise the impact of any service enhancements.
 
 ---
 
