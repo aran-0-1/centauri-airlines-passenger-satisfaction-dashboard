@@ -132,7 +132,7 @@ This helps assess whether the airline’s core passenger base is satisfied.
 
 ## Dashboard Insights and Analysis
 
-[Read the Dashboard Insight and Analysis](dashboard-insights-analysis.md)
+[Read the Dashboard Insights and Analysis](dashboard-insights-analysis.md)
 
 ---
 
@@ -170,9 +170,9 @@ Excel workbook containing the dashboard, analysis, working data, and supporting 
 
 Dashboard preview image.
 
-### `dashboard-insight-analysis.md`
+### `dashboard-insights-analysis.md`
 
-One-page dashboard insight and analysis.
+One-page dashboard insights and analysis.
 
 ---
 
