@@ -8,7 +8,7 @@ The dashboard was built in microsoft excel using functions and formulas focusing
 
 The aim of the project was to identify where Centauri Airlines should focus improvement efforts to increase passenger satisfaction.
 
-![Dashboard Preview](dashboard-preview.png)
+![Dashboard Preview](e1-dashboard-preview.png)
 
 ---
 
