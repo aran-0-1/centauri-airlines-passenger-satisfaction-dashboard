@@ -201,4 +201,4 @@ One-page dashboard insight and analysis discussing the key findings, assumptions
 
 ## Project Status
 
-Completed Project 1 0f 5
+Completed Project 1 of 5
