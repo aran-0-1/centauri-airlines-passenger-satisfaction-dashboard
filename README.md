@@ -189,7 +189,7 @@ A separate one-page discussion of the dashboard findings, assumptions, and analy
 
 Excel workbook containing the dashboard, analysis, working data, helper columns, and supporting calculations.
 
-### `images/dashboard-preview.png`
+### `e1-dashboard-preview.png`
 
 Dashboard preview image.
 
