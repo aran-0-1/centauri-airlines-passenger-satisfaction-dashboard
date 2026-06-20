@@ -8,7 +8,7 @@ The dashboard was built in **Microsoft Excel** using a formula-driven approach. 
 
 The aim of this project was to identify which passenger experience areas require improvement and how Overall Service Score is linked to passenger satisfaction.
 
-![Dashboard Preview](dashboard-preview.png)
+![Dashboard Preview](e1-dashboard-preview.png)
 
 ---
 
