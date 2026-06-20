@@ -2,13 +2,13 @@
 
 ## Project Overview
 
-This project analyses airline passenger satisfaction data to understand which service areas, passenger segments, and journey factors are associated with overall satisfaction.
+This project analyses airline passenger satisfaction data to understand how service ratings, passenger segments, flight class, and loyalty are associated with overall satisfaction.
 
-The dashboard was built in microsoft excel using functions and formulas focusing on service ratings, passenger experience areas, flight class, age groups, customer loyalty, and overall satisfaction outcomes.
+The dashboard was built in **Microsoft Excel** using a formula-driven approach. It allows users to explore the data dynamically by selecting different flight classes: **All**, **Economy**, **Economy Plus**, and **Business**. Based on the selected flight class, the KPI cards, charts, and satisfaction analysis update automatically.
 
-The aim of the project was to identify where Centauri Airlines should focus improvement efforts to increase passenger satisfaction.
+The aim of this project was to identify which passenger experience areas require improvement and how Overall Service Score is linked to passenger satisfaction.
 
-![Dashboard Preview](e1-dashboard-preview.png)
+![Dashboard Preview](dashboard-preview.png)
 
 ---
 
@@ -18,145 +18,168 @@ The aim of the project was to identify where Centauri Airlines should focus impr
 
 Supporting questions explored in the dashboard:
 
-- Which passenger experience areas receive the highest and lowest service ratings?
-- Do service strengths and weaknesses vary by flight class?
-- Which age groups make up the main passenger base?
-- How do different age groups rate us?
-- How satisfied are passengers overall?
-- How strongly is Overall Service Score (OSS) linked to satisfaction?
-- Does satisfaction vary by flight class?
-- Does loyalty result in satisfaction?
+* How do passengers rate each experience area?
+* Which service areas perform above or below the selected class average?
+* How do passenger volume and service scores vary by age group?
+* How strongly is Overall Service Score linked to passenger satisfaction?
+* How does satisfaction vary by passenger loyalty?
+* How do satisfaction outcomes differ across flight classes?
+
+---
+
+## Tools Used
+
+* Microsoft Excel
+* Excel formulas
+* Form controls
+* Data validation / linked cell logic
+* Conditional formatting
+* Charts and dashboard design
 
 ---
 
 ## Excel Techniques Used
 
-This project used a formula-driven approach to build the dashboard and support analysis.
+This project used a formula-driven dashboard design rather than PivotTables.
 
 Key Excel techniques included:
 
-- `COUNTIF` and `COUNTIFS`
-- `AVERAGEIF` and `AVERAGEIFS`
-- `SUMIF` and `SUMIFS`
-- `IF` and `IFS`
-- Ranking formulas - `RANK.EQ`
-- Lookup formulas - `XLOOKUP`
-- Dynamic Array Functions - `Transpose` , `Unique`, `Sort`
-- Data validation dropdowns - ability to choose different flight class.
-- Conditional formatting - colour scales for service ratings.
-- Fill Series.
-- Helper columns - Age bands, Overall Service Score bands, Flight haul bands, Delay bands etc.
-- Visualisation techniques 
-- Donut charts
-- Bar charts
-- Line chart
-- 100% stacked bar charts
-- Dynamic tables 
-- Custom number formatting
-- Dashboard layout and visual storytelling
-- Dashboard Protection
-   
+* `AVERAGEIF` and `AVERAGEIFS`
+* `COUNTIF` and `COUNTIFS`
+* `SUMIF` and `SUMIFS`
+* `IF` and `IFS`
+* `SWITCH`
+* `RANK.EQ`
+* `XLOOKUP`
+* `INDEX`
+* Dynamic array functions including `SORT`, `UNIQUE`, and `TRANSPOSE`
+* Helper columns
+* Form control spin button
+* Linked cell logic
+* Dynamic KPI cards
+* Dynamic chart ranges
+* Dynamic below-average highlighting
+* Age group segmentation
+* Overall Service Score bands
+* Satisfaction rate calculations
+* 100% stacked bar charts
+* Donut chart
+* Bar charts
+* Line and column charts
+* Dashboard layout and visual storytelling
+
 ---
 
 ## Data Preparation and Assumptions
 
-Several helper columns were created to support the analysis:
+Several helper columns were created to support the dashboard and analysis:
 
-- **Overall Service Score**: calculated as the average rating across passenger experience areas. Overall Service Score calculation example: There are 14 categories. A passenger rates us: 2,4,4,2,5,1,4,0,3,3,2,3,5,3. Sum of the rating = 41. Number of response = 13. Overall Service Score = 41/13 = 3.15.
-- **Age Group**: passengers were grouped into age bands.
-- **Flight Haul Band**: flight distance was grouped into short, medium, long, and very long-haul categories.
-- **Delay Band**: flights were grouped according to no delay, minor, moderate and severe delay.
-- **Overall Service Score Band**: passengers were grouped based on their overall service score.
-- **Satisfaction Flag**: used to calculate satisfaction rates. 1 = Satisfied. 0 = Neutral/Dissatisfied.
+* **Overall Service Score (OSS)**: calculated as the average rating across passenger experience areas, excluding `0` values.
+* **Age Group**: passengers were grouped into age bands.
+* **Overall Service Score Band**: passengers were grouped into OSS bands to compare satisfaction rates.
+* **Satisfaction Rate**: calculated as the percentage of passengers marked as satisfied.
+* **Class Selection Logic**: a form control was used to switch between All, Economy, Economy Plus, and Business views.
+* **Dynamic Highlighting**: experience areas below the selected class OSS average were highlighted.
+
+### Overall Service Score Calculation Example
+
+Overall Service Score was calculated as the average rating across the passenger experience areas.
+
+There are 14 passenger experience categories. If a passenger gives the following ratings:
+
+`2, 4, 4, 2, 5, 1, 4, 0, 3, 3, 2, 3, 5, 3`
+
+The value `0` is treated as **Not Rated / Not Applicable**, so it is excluded from the calculation.
+
+* Sum of valid ratings = `41`
+* Number of valid responses = `13`
+* Overall Service Score = `41 / 13`
+* Overall Service Score = `3.15`
 
 Important assumptions:
 
-- Rating values of `0` were treated as **Not Rated / Not Applicable** and excluded from service rating calculations. This is what the inital author of the data assumes. Nonetheless, these responses were low/negligible in relation to the overall data.
-- Flight distance was treated as miles.
-- The analysis focuses on association rather than causation. For example, higher satisfaction on longer-haul flights may be influenced by class mix rather than flight haul alone.
+* Rating values of `0` were treated as **Not Rated / Not Applicable** and excluded from average service rating calculations.
+* The analysis focuses on association rather than causation.
+* Flight haul was analysed during the project but was not included in the final dashboard because further analysis showed that flight class explained the satisfaction pattern more clearly.
 
-Other information:
-
-- Initial data was very clean and well structured. There were no null/empty values and each row represented a unique passenger meaning no duplication.
-- Some data prepartion was involved in order to make column values more concise/readable using excel's find and replace feature. 
-- No power query or data modelling aspects were used. These features will be used later in Power BI projects.
-- The inital dataset contained approximatley 104k rows and 25 columns. Worked dataset has the same number of rows but 32 columns now.
-- Passenger IDs seemed to be random and big in numbers so a change was made using fill series from 1 to until 103904. This is ok in my context however in an organisational setting it is not recommended as this id may be a primary key that is referenced by a foriegn key in another table.
-- The dataset used for this project was sourced from Kaggle: Airline Passenger Satisfaction dataset.
+---
 
 ## Dashboard Sections
 
- 1. Service Ratings by Passenger Experience Area
+### 1. Flight Class Selector
 
-This section compares the average rating across different passenger experience areas.
+The dashboard includes a form control spin button that allows users to switch between:
 
-The lowest-rated areas which fell below the overall service score were highlighted to identify where Centauri Airlines may need to focus improvement efforts.
+* All passengers
+* Economy
+* Economy Plus
+* Business
 
- 2. Dynamic Top and Bottom 5 Experience Areas by Flight Class
+The KPI cards and charts update dynamically based on the selected flight class.
 
-A data validation dropdown allows the user to select a flight class: Business, Economy, or Economy Plus.
+---
 
-The dashboard then dynamically shows the top 5 and bottom 5 passenger experience areas for the selected class.
+### 2. Service Ratings by Experience Area
 
-3. Age Group Profile
+This section shows the top-rated and lowest-rated passenger experience areas, along with the Overall Service Score for the selected flight class.
 
-This section shows passenger count and Overall Service Score by age group.
+The bar chart dynamically updates based on the selected class and highlights experience areas that fall below the selected class average.
 
-It helps identify which age groups make up the largest share of the passenger base and how the overall service score varies by different age groups.
+---
 
-4. Overall Passenger Satisfaction
+### 3. Passenger Profile and Overall Service Score
 
-A donut chart shows the overall split between satisfied and neutral/dissatisfied passengers.
+This section analyses passenger count and Overall Service Score by age group.
 
-This gives a high-level view of customer satisfaction.
+The dashboard highlights the largest passenger age groups to show where passenger volume is concentrated and whether service scores differ significantly across age groups.
 
-5. Overall Service Score vs Satisfaction Rate
+---
 
-This section analyses how satisfaction rate changes across Overall Service Score bands.
+### 4. Satisfaction Drivers and Outcomes
 
-It shows whether passengers with higher service scores are more likely to be satisfied.
+This section shows the overall satisfaction rate, current OSS band, and loyal passenger share for the selected flight class.
 
-6. Flight Class vs Satisfaction
+It also compares satisfaction rate across Overall Service Score bands to show how higher service scores are associated with higher satisfaction.
 
-A 100% stacked bar chart shows satisfaction split by flight haul.
+---
 
-It shows that satisfaction can vary greatly by flight class. 
+### 5. Passenger Loyalty and Satisfaction
 
-7. Customer Loyalty vs Satisfaction
+A 100% stacked bar chart compares satisfaction outcomes between loyal and non-loyal passengers.
 
-A 100% stacked bar chart compares satisfaction between loyal and non-loyal passengers.
+This helps assess whether passenger loyalty aligns with higher satisfaction and whether the airline’s existing loyal passenger base still has room for improvement.
 
-This helps assess whether the airline’s core passenger base is satisfied.
+---
+
+## Key Insights
+
+* Inflight Service and Baggage Handling were generally strong experience areas, while Inflight Wi-Fi Service and Online Booking were recurring weaker areas.
+* Several experience areas fell below the selected class average, showing that Centauri Airlines should prioritise weaker controllable service areas.
+* Overall Service Score was strongly associated with satisfaction. Passengers in higher OSS bands showed much higher satisfaction rates.
+* Economy passengers had a much lower satisfaction rate than Business passengers, making Economy a key improvement area.
+* Passenger volume was mainly concentrated in the 25–54 age range, while Overall Service Score remained relatively consistent across age groups.
+* Loyal passengers were more satisfied than non-loyal passengers, but satisfaction among loyal passengers still remained below 50% in the overall view.
+* Flight haul was initially analysed, but further investigation showed that higher satisfaction on longer-haul flights was largely influenced by a higher proportion of Business Class passengers.
+
+---
+
+## Recommendations
+
+Centauri Airlines should prioritise improving controllable low-rated service areas such as **Inflight Wi-Fi Service**, **Online Booking**, and **Food & Drink**.
+
+Improving these experience areas could help raise the Overall Service Score and move more passengers into higher satisfaction bands.
+
+The airline should also pay close attention to **Economy passengers**, as they make up a large share of the passenger base but show much lower satisfaction than Business passengers.
+
+Finally, although loyal passengers are more satisfied than non-loyal passengers, satisfaction among loyal passengers still leaves room for improvement. This suggests that Centauri Airlines should focus not only on customer retention, but also on improving the overall experience for existing loyal passengers.
 
 ---
 
 ## Dashboard Insights and Analysis
 
-[Read the Dashboard Insights and Analysis](dashboard-insights-analysis.md)
+A separate one-page discussion of the dashboard findings, assumptions, and analysis decisions is available here:
 
----
-
-## Recommendations 
-
-- Raise the Overall Service Score Above 3.50
-
-The OSS band analysis demonstrates that crossing from the 3.00–3.49 band into 3.50–3.99 is associated with a significant jump in satisfaction from 38% to 61%. This should be treated as a concrete, measurable target and the primary focus for all improvement efforts across the airline.
-
-- Prioritise Controllable Service Weaknesses
-
-Immediate attention should be directed towards Inflight Wi-Fi, the online booking experience, and catering services. These are areas where the airline has direct control and current performance is actively dragging the overall service score below the 3.50 threshold. Gate Location and Schedule Convenience, whilst below average, are likely influenced by airport operations and should be treated as secondary priorities.
-
-- Address the Economy Class Experience Urgently
-
-With only 19% satisfaction among Economy passengers — who represent 45% of the passenger base — this is the single biggest lever for improving overall satisfaction. Even modest and targeted service improvements in Economy could have an outsized impact on the airline's headline satisfaction rate.
-
-- Improve Satisfaction Among the Loyal Passenger Base
-  
-Whilst 82% of passengers are loyal to Centauri Airlines, satisfaction within this group sits below 50% at 48%. This suggests the airline is succeeding in retaining passengers but not fully converting that loyalty into a positive experience. Improvement efforts should therefore focus on enhancing the quality of experience for existing loyal customers rather than solely prioritising retention.
-
-- Target the Core Passenger Demographic
-
-Passengers aged 25–54 represent 63% of the passenger base. Future improvement efforts — particularly around digital touchpoints such as Wi-Fi and online booking — should be shaped around the preferences and behaviours of this demographic to maximise the impact of any service enhancements.
+[Read the Dashboard Insight and Analysis](dashboard-insight-analysis.md)
 
 ---
 
@@ -164,17 +187,18 @@ Passengers aged 25–54 represent 63% of the passenger base. Future improvement 
 
 ### `Centauri_Airlines_Passenger_Satisfaction_Dashboard.xlsx`
 
-Excel workbook containing the dashboard, analysis, working data, and supporting calculations.
+Excel workbook containing the dashboard, analysis, working data, helper columns, and supporting calculations.
 
-### `dashboard-preview.png`
+### `images/dashboard-preview.png`
 
 Dashboard preview image.
 
-### `dashboard-insights-analysis.md`
+### `dashboard-insight-analysis.md`
 
-One-page dashboard insights and analysis.
+One-page dashboard insight and analysis discussing the key findings, assumptions, and recommendations from the project.
 
 ---
 
 ## Project Status
-Completed Project 1 of 5.
+
+Completed Project 1 0f 5
