@@ -1,6 +1,6 @@
 # Centauri Airlines Passenger Satisfaction Dashboard
 
-![Dashboard Preview](images/e1-dashboard-preview.png)
+![Dashboard Preview](e1-dashboard-preview.png)
 
 ## Project Overview
 
@@ -183,9 +183,9 @@ Finally, although loyal passengers are more satisfied than non-loyal passengers,
 | File                                                      | Description                                                                                                             |
 | --------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
 | `centauri-airlines-Passenger-Satisfaction-Dashboard.xlsx` | Excel workbook containing the dashboard, analysis, working data, helper columns, and supporting calculations.           |
-| `images/e1-dashboard-preview.png`                            | Main dashboard preview image.                                                                                           |
-| `images/e1-economy-class-view.png`                           | Example dashboard view when Economy is selected using the flight class control.                                         |
-| `images/e1-business-class-view.png`                          | Example dashboard view when Business is selected using the flight class control.                                        |
+| `e1-dashboard-preview.png`                            | Main dashboard preview image.                                                                                           |
+| `e1-economy-class-view.png`                           | Example dashboard view when Economy is selected using the flight class control.                                         |
+| `e1-business-class-view.png`                          | Example dashboard view when Business is selected using the flight class control.                                        |
 | `e1-insights-analysis.md`                           | One-page dashboard insights and analysis discussing the key findings, assumptions, and recommendations from the project. |
 
 ---
