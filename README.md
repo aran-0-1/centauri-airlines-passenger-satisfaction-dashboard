@@ -1,6 +1,6 @@
 # Centauri Airlines Passenger Satisfaction Dashboard
 
-![Dashboard Preview](images/dashboard-preview.png)
+![Dashboard Preview](images/e1-dashboard-preview.png)
 
 ## Project Overview
 
@@ -152,7 +152,7 @@ The OSS band chart shows how satisfaction rate changes as Overall Service Score 
 
 A separate one-page discussion of the dashboard findings, assumptions, and analysis decisions is available here:
 
-[Read the Dashboard Insight and Analysis](dashboard-insight-analysis.md)
+[Read the Dashboard Insight and Analysis](e1-insights-analysis.md)
 
 Key findings from the dashboard include:
 
@@ -182,11 +182,11 @@ Finally, although loyal passengers are more satisfied than non-loyal passengers,
 
 | File                                                      | Description                                                                                                             |
 | --------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| `Centauri_Airlines_Passenger_Satisfaction_Dashboard.xlsx` | Excel workbook containing the dashboard, analysis, working data, helper columns, and supporting calculations.           |
-| `images/dashboard-preview.png`                            | Main dashboard preview image.                                                                                           |
-| `images/economy-class-view.png`                           | Example dashboard view when Economy is selected using the flight class control.                                         |
-| `images/business-class-view.png`                          | Example dashboard view when Business is selected using the flight class control.                                        |
-| `dashboard-insight-analysis.md`                           | One-page dashboard insight and analysis discussing the key findings, assumptions, and recommendations from the project. |
+| `centauri-airlines-Passenger-Satisfaction-Dashboard.xlsx` | Excel workbook containing the dashboard, analysis, working data, helper columns, and supporting calculations.           |
+| `images/e1-dashboard-preview.png`                            | Main dashboard preview image.                                                                                           |
+| `images/e1-economy-class-view.png`                           | Example dashboard view when Economy is selected using the flight class control.                                         |
+| `images/e1-business-class-view.png`                          | Example dashboard view when Business is selected using the flight class control.                                        |
+| `e1-insights-analysis.md`                           | One-page dashboard insights and analysis discussing the key findings, assumptions, and recommendations from the project. |
 
 ---
 
