@@ -1,25 +1,27 @@
 # Centauri Airlines Passenger Satisfaction Dashboard
 
+![Dashboard Preview](images/dashboard-preview.png)
+
 ## Project Overview
 
 This project analyses airline passenger satisfaction data to understand how service ratings, passenger segments, flight class, and loyalty are associated with overall satisfaction.
 
-The dashboard was built in **Microsoft Excel** using a formula-driven approach. It allows users to explore the data dynamically by selecting different flight classes: **All**, **Economy**, **Economy Plus**, and **Business**. Based on the selected flight class, the KPI cards, charts, and satisfaction analysis update automatically.
+The dashboard was built in **Microsoft Excel** using a formula-driven approach. It allows users to explore the data dynamically by selecting different flight classes: **All**, **Economy**, **Economy Plus**, and **Business**. Based on the selected flight class, the KPI cards, charts, service ratings, passenger profile, and satisfaction analysis update automatically.
 
 The aim of this project was to identify which passenger experience areas require improvement and how Overall Service Score is linked to passenger satisfaction.
 
-![Dashboard Preview](e1-dashboard-preview.png)
-
 ---
 
-## Business Question
+## Business Questions
+
+The main business question for this project was:
 
 **What drives passenger satisfaction at Centauri Airlines?**
 
 Supporting questions explored in the dashboard:
 
 * How do passengers rate each experience area?
-* Which service areas perform above or below the selected class average?
+* Which passenger experience areas perform above or below the selected class average?
 * How do passenger volume and service scores vary by age group?
 * How strongly is Overall Service Score linked to passenger satisfaction?
 * How does satisfaction vary by passenger loyalty?
@@ -27,26 +29,14 @@ Supporting questions explored in the dashboard:
 
 ---
 
-## Tools Used
-
-* Microsoft Excel
-* Excel formulas
-* Form controls
-* Data validation / linked cell logic
-* Conditional formatting
-* Charts and dashboard design
-
----
-
 ## Excel Techniques Used
 
 This project used a formula-driven dashboard design rather than PivotTables.
 
-Key Excel techniques included:
+Key Excel techniques used include:
 
 * `AVERAGEIF` and `AVERAGEIFS`
 * `COUNTIF` and `COUNTIFS`
-* `SUMIF` and `SUMIFS`
 * `IF` and `IFS`
 * `SWITCH`
 * `RANK.EQ`
@@ -59,6 +49,7 @@ Key Excel techniques included:
 * Dynamic KPI cards
 * Dynamic chart ranges
 * Dynamic below-average highlighting
+* Dynamic highlighting of the top 3 age groups by passenger count
 * Age group segmentation
 * Overall Service Score bands
 * Satisfaction rate calculations
@@ -79,11 +70,12 @@ Several helper columns were created to support the dashboard and analysis:
 * **Overall Service Score Band**: passengers were grouped into OSS bands to compare satisfaction rates.
 * **Satisfaction Rate**: calculated as the percentage of passengers marked as satisfied.
 * **Class Selection Logic**: a form control was used to switch between All, Economy, Economy Plus, and Business views.
-* **Dynamic Highlighting**: experience areas below the selected class OSS average were highlighted. In addition the top 3 age groups by passenger volume were also highlighted. 
+* **Dynamic Highlighting**: experience areas below the selected class OSS average were highlighted.
+* **Top 3 Age Group Highlighting**: the top 3 age groups by passenger count were highlighted in the passenger profile section.
 
 ### Overall Service Score Calculation Example
 
-Overall Service Score was calculated as the average rating across the passenger experience areas.
+Overall Service Score was calculated as the average rating across passenger experience areas.
 
 There are 14 passenger experience categories. If a passenger gives the following ratings:
 
@@ -121,9 +113,14 @@ The KPI cards and charts update dynamically based on the selected flight class.
 
 ### 2. Service Ratings by Experience Area
 
-This section shows the top-rated and lowest-rated passenger experience areas, along with the Overall Service Score for the selected flight class.
+This section shows:
 
-The bar chart dynamically updates based on the selected class and highlights experience areas that fall below the selected class average.
+* Top-rated experience area
+* Lowest-rated experience area
+* Overall Service Score for the selected flight class
+* Average service rating by passenger experience area
+
+The bar chart dynamically updates based on the selected flight class and highlights experience areas that fall below the selected class average.
 
 ---
 
@@ -131,27 +128,33 @@ The bar chart dynamically updates based on the selected class and highlights exp
 
 This section analyses passenger count and Overall Service Score by age group.
 
-The dashboard highlights the top three passenger age groups to show where passenger volume is concentrated and whether service scores differ significantly across age groups.
+The passenger count chart highlights the **top 3 age groups by passenger volume**, while the service score chart provides context on how these age groups rate the overall service experience.
+
+This helps show where the passenger base is most concentrated and whether service scores vary significantly across age groups.
 
 ---
 
 ### 4. Satisfaction Drivers and Outcomes
 
-This section shows the overall satisfaction rate, current OSS band, and loyal passenger share for the selected flight class.
+This section shows:
 
-It also compares satisfaction rate across Overall Service Score bands to show how higher service scores are associated with higher satisfaction.
+* Satisfaction rate
+* Current OSS band
+* Loyal passenger share
+* Satisfaction rate by OSS band
+* Satisfaction split by passenger loyalty
 
----
-
-### 5. Passenger Loyalty and Satisfaction
-
-A 100% stacked bar chart compares satisfaction outcomes between loyal and non-loyal passengers.
-
-This helps assess whether passenger loyalty aligns with higher satisfaction and whether the airline’s existing loyal passenger base still has room for improvement.
+The OSS band chart shows how satisfaction rate changes as Overall Service Score increases.
 
 ---
 
-## Key Insights
+## Dashboard Insights and Analysis
+
+A separate one-page discussion of the dashboard findings, assumptions, and analysis decisions is available here:
+
+[Read the Dashboard Insight and Analysis](dashboard-insight-analysis.md)
+
+Key findings from the dashboard include:
 
 * Inflight Service and Baggage Handling were generally strong experience areas, while Inflight Wi-Fi Service and Online Booking were recurring weaker areas.
 * Several experience areas fell below the selected class average, showing that Centauri Airlines should prioritise weaker controllable service areas.
@@ -175,30 +178,21 @@ Finally, although loyal passengers are more satisfied than non-loyal passengers,
 
 ---
 
-## Dashboard Insights and Analysis
-
-A separate one-page discussion of the dashboard findings, assumptions, and analysis decisions is available here:
-
-[Read the Dashboard Insight and Analysis](dashboard-insight-analysis.md)
-
----
-
 ## Files Included
 
-### `Centauri_Airlines_Passenger_Satisfaction_Dashboard.xlsx`
-
-Excel workbook containing the dashboard, analysis, working data, helper columns, and supporting calculations.
-
-### `e1-dashboard-preview.png`
-
-Dashboard preview image.
-
-### `dashboard-insight-analysis.md`
-
-One-page dashboard insight and analysis discussing the key findings, assumptions, and recommendations from the project.
+| File                                                      | Description                                                                                                             |
+| --------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| `Centauri_Airlines_Passenger_Satisfaction_Dashboard.xlsx` | Excel workbook containing the dashboard, analysis, working data, helper columns, and supporting calculations.           |
+| `images/dashboard-preview.png`                            | Main dashboard preview image.                                                                                           |
+| `images/economy-class-view.png`                           | Example dashboard view when Economy is selected using the flight class control.                                         |
+| `images/business-class-view.png`                          | Example dashboard view when Business is selected using the flight class control.                                        |
+| `dashboard-insight-analysis.md`                           | One-page dashboard insight and analysis discussing the key findings, assumptions, and recommendations from the project. |
 
 ---
 
 ## Project Status
 
 Completed Project 1 of 5
+
+
+
