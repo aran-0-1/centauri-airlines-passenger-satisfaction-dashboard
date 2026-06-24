@@ -182,7 +182,7 @@ Finally, although loyal passengers are more satisfied than non-loyal passengers,
 
 | File                                                      | Description                                                                                                             |
 | --------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| `centauri-airlines-Passenger-Satisfaction-Dashboard.xlsx` | Excel workbook containing the dashboard, analysis, working data, helper columns, and supporting calculations.           |
+| `centauri-airlines-passenger-satisfaction-dashboard.xlsx` | Excel workbook containing the dashboard, analysis, working data, helper columns, and supporting calculations.           |
 | `e1-dashboard-preview.png`                            | Main dashboard preview image.                                                                                           |
 | `e1-economy-class-view.png`                           | Example dashboard view when Economy is selected using the flight class control.                                         |
 | `e1-business-class-view.png`                          | Example dashboard view when Business is selected using the flight class control.                                        |
