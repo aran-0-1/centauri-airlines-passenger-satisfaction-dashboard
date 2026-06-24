@@ -79,7 +79,7 @@ Several helper columns were created to support the dashboard and analysis:
 * **Overall Service Score Band**: passengers were grouped into OSS bands to compare satisfaction rates.
 * **Satisfaction Rate**: calculated as the percentage of passengers marked as satisfied.
 * **Class Selection Logic**: a form control was used to switch between All, Economy, Economy Plus, and Business views.
-* **Dynamic Highlighting**: experience areas below the selected class OSS average were highlighted.
+* **Dynamic Highlighting**: experience areas below the selected class OSS average were highlighted. In addition the top 3 age groups by passenger volume were also highlighted. 
 
 ### Overall Service Score Calculation Example
 
@@ -131,7 +131,7 @@ The bar chart dynamically updates based on the selected class and highlights exp
 
 This section analyses passenger count and Overall Service Score by age group.
 
-The dashboard highlights the largest passenger age groups to show where passenger volume is concentrated and whether service scores differ significantly across age groups.
+The dashboard highlights the top three passenger age groups to show where passenger volume is concentrated and whether service scores differ significantly across age groups.
 
 ---
 
