@@ -128,7 +128,7 @@ The bar chart dynamically updates based on the selected flight class and highlig
 
 This section analyses passenger count and Overall Service Score by age group.
 
-The passenger count chart highlights the **top 3 age groups by passenger volume**, while the service score chart provides context on how these age groups rate the overall service experience.
+The passenger count chart highlights the top 3 age groups by passenger volume, while the service score chart provides context on how these age groups rate the overall service experience.
 
 This helps show where the passenger base is most concentrated and whether service scores vary significantly across age groups.
 
